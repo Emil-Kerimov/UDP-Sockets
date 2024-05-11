@@ -26,7 +26,7 @@ public class ClientHandler implements Runnable {
             oos = new ObjectOutputStream(socket.getOutputStream());
             while(work) {
                 String classFile = (String) ois.readObject();
-                classFile = classFile.replaceFirst("client", "server"); //Важно: подправить полное имя
+                classFile = classFile.replaceFirst("client", "server");git add .
                 byte[] b = (byte[]) ois.readObject();
                 FileOutputStream fos = new FileOutputStream(classFile);
                 fos.write(b);

@@ -2,7 +2,6 @@ package TaskFromLab45TCPSockets.client;
 
 import TaskFromLab45TCPSockets.Executable;
 
-import java.io.Serializable;
 import java.math.BigInteger;
 
 
